@@ -14,13 +14,13 @@ public class SimpleCounter
 
     
 
-    while( num>=lastNumber)//used while loop so if number entered is greater than or equal to 0 it will add one over and over until its equal to the number entered
+    while( num>=lastNumber)
     {
         System.out.println(lastNumber++);
         if(num == lastNumber)
     {
         System.out.println(num);
-        break; //breaks after number equals number entered
+        break;
     }
     }
     
