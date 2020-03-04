@@ -7,7 +7,6 @@ public class CustomCalculator
     public static Scanner scan = new Scanner(System.in);
     public static void main(String args[]) 
     {
-
         System.out.println("If you would like to add enter '+', subtract enter '-', multiply enter 'x', divide enter '/', find perimeter of a rectangle enter 'p', area of a square enter 'as', Area of a rectangle 'ar', or to find quadratic derivative type 'deriv':");
         //Asked user what property/use of the calculator they would like to use
         String prop = scan.next();

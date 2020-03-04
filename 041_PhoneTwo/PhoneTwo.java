@@ -1,16 +1,36 @@
-
-public class Phone 
+public class PhoneTwo
 {
     private String type;
     private String color;
     private double mem;
     private boolean connect;
-    public Phone(String ttype, String ccolor, double mmem, boolean cconnect)
+    public PhoneTwo(String type, String color, double mem, boolean connect)
     {
-        type = ttype;
-        color = ccolor;
+        this.type = type;
+        this.color = color;
+        this.mem = mem;
+        this.connect = connect;
+    }
+    public PhoneTwo()
+    {
+        type = "iPhone 11 Pro";
+        color = "Seafoam Green";
+        mem = 128.0;
+        connect = true;
+    }
+    public PhoneTwo(String color, boolean connect)
+    {
+        type = "Nokia 3310";
+        this.color = color;
+        mem = 1.0;
+        this.connect = connect;
+    }
+    public PhoneTwo(double mmem)
+    {
+        type = "iPhone 7";
+        color = "Black";
         mem = mmem;
-        connect = cconnect;
+        connect = true;
     }
 
     public String getType() 
