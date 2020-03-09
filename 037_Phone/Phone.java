@@ -5,14 +5,16 @@ public class Phone
     private String color;
     private double mem;
     private boolean connect;
+    //declared variables
     public Phone(String ttype, String ccolor, double mmem, boolean cconnect)
     {
         type = ttype;
         color = ccolor;
         mem = mmem;
         connect = cconnect;
+        //initialized variables
     }
-
+//made getters to return the value
     public String getType() 
     {
         return type;
@@ -34,6 +36,7 @@ public class Phone
     {
         
     }
+    //checks boolean and returns whether your connected or not
     public void testConnect()
     {
         if(connect)

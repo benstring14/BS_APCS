@@ -58,11 +58,15 @@ public class PhoneTwo
     {
         if(connect)
         {
-            System.out.println("Your phone is connected");
+            System.out.println("that is connected");
         }
         else
         {
                 System.out.println("You are no longer connected");
         }
+    }
+    public String toString() 
+    {
+        return ("You have a " + color + " " + type + " with " + mem + " gig of memory" );
     }
 }

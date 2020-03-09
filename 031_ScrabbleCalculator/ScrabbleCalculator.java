@@ -1,34 +1,21 @@
 import java.util.Scanner;
-//Not finsihed, still need letter bank
+ 
 public class ScrabbleCalculator
 {
+    //created an array with the 7 different number values awarded to each letter
     int[] points = {1,2,3,4,5,8,10};
     public static void main(String[] args)
     {
-        int[] points = {1,2,3,4,5,8,10};
-        int[] box = {9,2,2,4,12,2,3,2,9,1,1,4,2,6,8,2,1,6,4,6,4,2,2,1,2,1};
-        String[] alphabet = {"a", "b", "c", "d", "e",  
-               "f", "g", "h", "i",
-               "j",   "k", "l", "m", "n", "o", 
-               "p", "q", "r", "s", "t",   "u", "v",
-               "w", "x", "y", "z"};
-        int[] totalNum = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};       
+        int[] points = {1,2,3,4,5,8,10};   
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter a word");
+        System.out.println("Enter a word (ALL CAPS)");
         String word = scan.nextLine();
+        //scans user input
         int length = word.length();
+        //creates int out of word length
         System.out.println(word);
-        int totalPoints = 0;
-        for(int i = 0; i<=length-1; i++)
-        {
-            String foo = word.substring(i,i+1);
-            for (int j = 0; j < alphabet.length; j++ )
-           {
-            
-           }
-
-        }
-        
+        int totalPoints = 0; // set total points to 0 so it can be added
+       //used for loop to check each letter
         for(int i = 0; i<=length-1; i++)
         {
             
@@ -71,6 +58,5 @@ public class ScrabbleCalculator
             }
             
         }
-           System.out.println(totalPoints);
     }
 }

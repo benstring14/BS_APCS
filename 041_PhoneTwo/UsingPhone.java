@@ -2,14 +2,14 @@ public class UsingPhone
 {
     public static void main(String args[])
     {
-        PhoneTwo phone = new PhoneTwo("iPhone", "black" , 64.0, true);
-        PhoneTwo set = new PhoneTwo();
-        PhoneTwo colorConnect = new PhoneTwo("White", false);
-        PhoneTwo mem = new PhoneTwo(64.0);
+        //creates new phone
+        PhoneTwo phone = new PhoneTwo("black", true);
+        PhoneTwo phone2 = new PhoneTwo();
+        PhoneTwo phone3 = new PhoneTwo(128.0);
+        
+        System.out.println(phone);
+        //pulls info from toString()
         phone.testConnect();
-    }
-    public String toString()
-    {
-        return phone.getType() + " " + phone.getColor() + " " + phone.getMem() + " " + phone.getConnect();
+        //tests connection using testConnect method made in phone.java
     }
 }
